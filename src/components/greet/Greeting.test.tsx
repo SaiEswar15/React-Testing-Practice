@@ -1,9 +1,16 @@
 import { render, screen } from "@testing-library/react"
-import Greeting from "./Greeting"
+import Greeting from "./Greeting";
 
-test("greetings renders here", ()=>{
-    render(<Greeting/>)
-    const textElement = screen.getByText("Hello from eswar");
+test("renders text correctly", ()=>{
+    render(<Greeting/>);
+    const textElement = screen.getByText("Hello");
     expect(textElement).toBeInTheDocument();
+})
 
+//writing test using the TDD method 
+//in this first we write the test and get errors and then solve them to be green.
+test("renders with name", ()=>{
+    render(<Greeting name = "Eswar"/>)
+    const textWithNameElement = screen.getByText("Hello Eswar");
+    expect(textWithNameElement).toBeInTheDocument();
 })

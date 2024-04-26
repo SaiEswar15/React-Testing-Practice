@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greeting></Greeting>
+        <Greeting name = "Eswar"></Greeting>
+        <p>Hello</p>
       </header>
     </div>
   );

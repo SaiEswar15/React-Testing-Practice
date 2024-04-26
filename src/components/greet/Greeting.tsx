@@ -1,8 +1,12 @@
-function Greeting()
+type GreetingProps = {
+    name? : string
+}
+
+function Greeting(props : GreetingProps) : JSX.Element
 {
     return (
         <div>
-            <p>Hello from eswar</p>
+            <p>Hello {props.name}</p>
         </div>
     )
 }
