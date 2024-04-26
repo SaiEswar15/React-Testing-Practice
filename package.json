@@ -10,6 +10,7 @@
     "@types/node": "^16.18.96",
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
+    "nodemon": "^3.1.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-scripts": "5.0.1",
@@ -17,6 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev" : "nodemon --exec react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
